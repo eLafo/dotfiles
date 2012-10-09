@@ -1,5 +1,5 @@
-sessions
-.netrwhist
-spell
-bundle/
-tags/
+vim/sessions
+vim/.netrwhist
+vim/spell
+vim/bundle/
+vim/tags/
