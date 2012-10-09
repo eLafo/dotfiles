@@ -1,4 +1,4 @@
-## Dotfiles
+## Bash
 
 ### bash configuration
 
