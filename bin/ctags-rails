@@ -1,0 +1,23 @@
+#! /bin/sh
+# tags default ruby and associated gems
+
+#TODO ctags for rubies
+#SRC="${rvm_path}/rubies/default"
+#echo "SRC: ${SRC}"
+
+GEMS=`rvm gemdir`/gems
+echo "GEMS: ${GEMS}"
+
+DEST="${HOME}/.vim/tags/${PWD##*/}"
+echo "DEST: ${DEST}"
+echo "creating directory: $(dirname $DEST)"
+mkdir -p $(dirname $DEST)
+rm $DEST
+
+ctags \
+ --exclude=.git \
+ --exclude=tags \
+ --exclude=logs \
+ --exclude=doc \
+ -R -f $DEST $GEMS
+ #-R -f $DEST $SRC $GEMS
