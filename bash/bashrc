@@ -114,6 +114,7 @@ fi
 if [ -d ~/projects ]; then
   for dir in $(ls ~/projects); do
     alias $dir="cd ~/projects/$dir";
+    alias "dev_$dir"="tmux-rails $dir"
   done;
 fi
 
@@ -124,3 +125,5 @@ if [ -f $HOME/.rvm/scripts/rvm ]; then
 fi
 
 [[ -f "$HOME/.local_bashrc" ]] && source "$HOME/.local_bashrc"
+
+PATH=$PATH:$HOME/dotfiles/bin
