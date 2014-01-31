@@ -125,5 +125,6 @@ if [ -f $HOME/.rvm/scripts/rvm ]; then
 fi
 
 [[ -f "$HOME/.local_bashrc" ]] && source "$HOME/.local_bashrc"
+[[ -f "$HOME/.profile" ]] && source "/home/elafo/.profile"
 
-PATH=$PATH:$HOME/dotfiles/bin
+PATH=$PATH:$HOME/dotfiles/bin:$HOME/bin
