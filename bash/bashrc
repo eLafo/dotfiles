@@ -118,13 +118,12 @@ if [ -d ~/projects ]; then
   done;
 fi
 
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
+
 if [ -f $HOME/.rvm/scripts/rvm ]; then
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
   PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 fi
-
-[[ -f "$HOME/.local_bashrc" ]] && source "$HOME/.local_bashrc"
-[[ -f "$HOME/.profile" ]] && source "/home/elafo/.profile"
 
 PATH=$PATH:$HOME/dotfiles/bin:$HOME/bin
