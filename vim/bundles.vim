@@ -70,3 +70,9 @@ Bundle 'mattn/webapi-vim'
 "Bundle 'ShowMarks'
 "Bundle 'tpope/vim-unimpaired'
 "Bundle 'reinh/vim-makegreen'
+
+" nodejs
+Bundle 'moll/vim-node'
+
+" javascript
+Bundle 'pangloss/vim-javascript'

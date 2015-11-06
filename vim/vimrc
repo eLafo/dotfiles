@@ -1,14 +1,26 @@
-source ~/.vim/bundles.vim
-source ~/.vim/global.vim
-source ~/.vim/plugins.vim
-source ~/.vim/macros.vim
-if has('gui_running')
-    source ~/.vim/gvimrc
-end
+set nocompatible
 
-" vimrc is loaded BEFORE the plugins
-source ~/.vim/before.vim
+set bs=2
+set ts=4
+set tw=1000000000
 
-" after.vim is loaded from ./after/plugin/after.vim
-" which should place it AFTER all the other plugins in the loading order
-" bindings.vim and local.vim are loaded from after.vim
+set expandtab
+set tabstop=8
+set softtabstop=4
+set shiftwidth=4
+filetype indent off
+filetype plugin on
+
+syntax on
+
+set autoindent
+set showmatch
+set showmode
+set mousehide
+
+set nowrapscan
+set hlsearch
+set incsearch
+
+set fileencoding=utf8
+set encoding=utf8
